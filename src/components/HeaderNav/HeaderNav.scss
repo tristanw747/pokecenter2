@@ -1,0 +1,177 @@
+$searchbox-height: 3rem;
+$color-light-gray: rgb(137, 137, 137);
+$color-lighter-gray: rgb(231, 231, 231);
+$color-regular-gray: rgb(88, 88, 88);
+
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  color: $color-regular-gray;
+
+  svg {
+    height: 100%;
+  }
+
+  .nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px 40px;
+    border-bottom: 1px solid $color-light-gray;
+
+    .nav-top-left {
+      height: 50px;
+    }
+
+    .nav-top-middle {
+      width: 100%;
+      padding: 0 3rem;
+      max-width: 550px;
+
+      .search-form {
+        display: flex;
+        flex-direction: row;
+
+        input {
+          // width: 80%;
+          line-height: $searchbox-height;
+          background-color: $color-lighter-gray;
+          border: none;
+          width: 100%;
+          padding-left: 1rem;
+
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+
+        .search-button {
+          border: none;
+
+          :hover {
+            cursor: pointer;
+          }
+
+          div {
+            background-color: $color-light-gray;
+            width: $searchbox-height;
+            height: $searchbox-height;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+              height: 1.5rem;
+              // vertical-align: middle;
+              color: rgb(255, 255, 255);
+            }
+          }
+        }
+
+      }
+    }
+
+    .nav-top-right {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      font-size: 11px;
+      font-weight: 600;
+
+      svg {
+        height: 70%;
+        // vertical-align: middle;
+        padding: 0 .7rem;
+      }
+    }
+  }
+
+
+
+
+  .nav-middle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // border-bottom: 1px solid $color-light-gray;
+    padding: 10px 40px;
+    align-items: center;
+
+    .nav-middle-all {
+      width: 100%;
+      max-width: 1000px;
+      font-size:24px;
+      line-height: 1.8;
+
+      &>div:nth-child(1) {
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      .gen-wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        &>a {
+          min-width: 40px;
+          font-weight: bold;
+        }
+
+        .generation-button {
+          width: 80px;
+          height: 20px;
+          background-color: rgb(255, 160, 160);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .nav-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>p {
+      margin: 20px 0;
+    }
+
+    .nav-bottom-first-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 10px;
+
+      div {
+        width: 70px;
+        background-color: var(--color);
+        border-radius: 5px;
+        padding: 2px;
+        text-align: center;
+        color: black;
+      }
+    }
+
+    .nav-bottom-second-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 900px;
+
+      div {
+        width: 70px;
+        background-color: var(--color);
+        border-radius: 5px;
+        padding: 2px;
+        text-align: center;
+        color: black;
+      }
+    }
+  }
+}

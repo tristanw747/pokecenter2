@@ -1,0 +1,27 @@
+  *{
+    color:inherit;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    &:focus{
+      outline: none;
+    }
+    font-family: 'Montserrat', sans-serif;
+  }
+  $bg-color: rgba( 255,255,255,.75 );
+
+  body{   
+    background-image: linear-gradient( 0deg, $bg-color,  $bg-color), url( './img/bg.jpg' );
+  }
+
+.app{
+  position:relative;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poke-container{
+  position:relative;
+  margin-bottom:240px;
+}
